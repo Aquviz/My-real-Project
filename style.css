@@ -1,0 +1,246 @@
+body
+{
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+nav
+{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    z-index: 1;
+}
+
+body{
+
+}
+nav img 
+{
+    width:98px;
+    cursor: pointer;
+}
+nav ul
+{
+    width: 1200px;
+    list-style-type:none;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 50px;
+}
+nav ul li a
+{   text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size:13px;
+    color: #141515;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px 5px 5px 5px;
+}
+nav ul li a:hover
+{
+    background-color: #2e2d2dd7;
+    color: #fff;
+    transition: all 0.3s;
+    
+}
+.container
+{display: inline-block; cursor: pointer;}
+     
+    .bar1, .bar2, .bar3 
+    { width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;}
+     
+      .change .bar1 
+      {-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);}
+     
+      .change .bar2 {opacity: 0;}
+     
+      .change .bar3 
+        {-webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);}
+.hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("food2.jpg");
+            height: 110%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+          }
+.hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+          }
+.hero-text .first p
+{
+    font-size: 90px;
+    color: rgb(255, 0, 72);
+    font-family: 'Alex Brush', cursive;
+    
+}
+.hero-text .second p
+{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 50px;
+    color: rgb(255, 191, 0);
+}
+.hero-text .third p
+{
+    font-size: 60px;
+    color: rgb(6, 255, 155);
+
+}
+.hero-text .forth p
+{
+    font-size: 20px;
+    font-family: 'Fascinate', cursive;
+    color: rgb(255, 251, 3);
+}
+.hero-text .sixth button {
+            font-size: 20px;
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 10px 20px;
+            color: black;
+            background-color: rgb(249, 249, 249);
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px 5px 5px 5px;
+            font-family: 'Bebas Neue', cursive;}
+          
+.hero-text .sixth button:hover {
+            background-color: rgb(30, 30, 30);
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+          }
+.hero-text .fifth p
+{
+  width: 200px;
+  height: 55px;
+  padding: 16px;
+  background-color: coral;
+  box-shadow: 10px 10px lightblue;
+  font-size: 20px;
+  align-items: center;
+}
+#mySidenav a 
+{ 
+    position: absolute;
+    left: -116px;
+    transition: 0.3s;
+    padding: 16px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+#mySidenav a:hover 
+     {left: 0;}
+
+#branches
+{
+    top: 200px;
+    background-color: rgb(6, 145, 225);
+}
+#qanda{
+    top: 260px;
+    background-color: rgb(230, 150, 47);
+}
+#menu
+{
+    top: 320px;
+    background-color: crimson;
+}
+#delivery
+{
+    top:380px;
+    background-color:rgb(155, 89, 155);
+}
+
+.sidebar {
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(115, 115, 115);
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+
